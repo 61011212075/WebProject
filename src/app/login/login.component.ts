@@ -9,8 +9,12 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   constructor(private router:Router) { }
-
+  email;
+  password;
   ngOnInit() {
+  }
+  login(){
+    console.log(this.email +" : "+this.password);
   }
   gotoRegister(){
     console.log('GoTO REGISTER');

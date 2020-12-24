@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import {InputTextModule} from 'primeng/inputtext';
 import { RegisterComponent } from './register/register.component';
 import {Routes,RouterModule} from '@angular/router';
+import {FormsModule} from '@angular/forms';
 
 const appRoutes :Routes = [
   {path:'register',component:RegisterComponent},
@@ -32,6 +33,7 @@ const appRoutes :Routes = [
     ToolbarModule,
     InputTextModule,
     RouterModule.forRoot(appRoutes),
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
