@@ -13,8 +13,9 @@ import {Routes,RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 
 const appRoutes :Routes = [
-  {path:'register',component:RegisterComponent},
   {path:'' ,component:LoginComponent},
+  {path:'register',component:RegisterComponent},
+  {path:'home',component:HomeComponent},
 
 ]
 
