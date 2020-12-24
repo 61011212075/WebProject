@@ -9,6 +9,13 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import {InputTextModule} from 'primeng/inputtext';
 import { RegisterComponent } from './register/register.component';
+import {Routes,RouterModule} from '@angular/router';
+
+const appRoutes :Routes = [
+  {path:'register',component:RegisterComponent},
+  {path:'' ,component:LoginComponent},
+
+]
 
 @NgModule({
   declarations: [
@@ -23,7 +30,8 @@ import { RegisterComponent } from './register/register.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     ToolbarModule,
-    InputTextModule
+    InputTextModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
