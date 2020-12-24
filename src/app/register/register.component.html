@@ -18,27 +18,26 @@
               <div class="card-body"><br>
                 
                 <span class="p-float-label">
-                    <input class="form-control" id="float-input" type="text" name="username" pInputText> 
-                    <label for="float-input">ชื่อ</label>
+                    <input class="form-control" id="float-input" type="text" name="fullname" [(ngModel)]="fullname" pInputText> 
+                    <label for="float-input">ชื่อ-สกุล</label>
                 </span>
                 <br>
                 <span class="p-float-label">
-                    <input class="form-control" id="float-input" type="text" name="email" pInputText> 
-                    <label for="float-input">อีเมล</label>
+                    <input class="form-control" id="float-input" type="text" name="username" [(ngModel)]="username" pInputText> 
+                    <label for="float-input">ชื่อผู้ใช้</label>
                 </span>
                 <br>
                 <span class="p-float-label">
-                    <input class="form-control" id="float-input" type="password" name="password" pInputText> 
+                    <input class="form-control" id="float-input" type="password" name="password" [(ngModel)]="password" pInputText> 
                     <label for="float-input">รหัสผ่าน</label>
                 </span>
                 <br>    
                 <span class="p-float-label">
-                    <!-- <input class="form-control" id="float-input" type="date" name="birthday" pInputText>  -->
-                    <input class="textbox-n form-control" type="text" name="birthday" onfocus="(this.type='date')" id="float-input" pInputText>
+                    <input class="textbox-n form-control" type="text" name="birthday" onfocus="(this.type='date')" [(ngModel)]="birthday" id="float-input" pInputText>
                     <label for="float-input">วันเกิด</label>
                 </span>
                 <br>            
-                <button class="form-control btn-success"  type="submit">สร้างบัญชีใหม่</button>
+                <button class="form-control btn-success" (click)="Rergister()" type="submit">สร้างบัญชีใหม่</button>
               </div>
             </div>
         </div>
