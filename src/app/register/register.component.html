@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="container" style="top: 50%; margin-top: 170pt;">
+                <h1 style="color:blue; font-size: 20;">𝙈𝙚𝙢𝙚𝙃𝙪𝙗</h1>
+                <h4>MemeHub ช่วยคุณเชื่อมต่อและแชร์ "Meme" กับผู้คนมากมายรอบตัวคุณ</h4>
+            </div>
+            
+        </div>
+        <div class="col-sm-2">
+            
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-black bg-white shadow-lg p-3" style="top: 40%; margin-top: 10pt;">              
+              <div class="card-body"><br>
+                
+                <span class="p-float-label">
+                    <input class="form-control" id="float-input" type="text" name="fullname" [(ngModel)]="fullname" pInputText> 
+                    <label for="float-input">ชื่อ-สกุล</label>
+                </span>
+                <br>
+                <span class="p-float-label">
+                    <input class="form-control" id="float-input" type="text" name="username" [(ngModel)]="username" pInputText> 
+                    <label for="float-input">ชื่อผู้ใช้</label>
+                </span>
+                <br>
+                <span class="p-float-label">
+                    <input class="form-control" id="float-input" type="password" name="password" [(ngModel)]="password" pInputText> 
+                    <label for="float-input">รหัสผ่าน</label>
+                </span>
+                <br>    
+                <span class="p-float-label">
+                    <input class="textbox-n form-control" type="text" name="birthday" onfocus="(this.type='date')" [(ngModel)]="birthday" id="float-input" pInputText>
+                    <label for="float-input">วันเกิด</label>
+                </span>
+                <br>
+                <span style="color: blue;">
+                    {{descript}}
+                </span>
+                <br>            
+                <button class="form-control btn-success" (click)="Rergister()" type="submit">สร้างบัญชีใหม่</button>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
