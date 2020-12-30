@@ -14,13 +14,17 @@
             <div class="card text-black bg-white shadow-lg p-3" style="top: 50%; margin-top: 10pt;">              
               <div class="card-body"><br>
                 <span class="p-float-label">
-                    <input class="form-control" id="float-input" type="text" name="username" [(ngModel)]="email" pInputText> 
+                    <input class="form-control" id="float-input" type="text" name="username" [(ngModel)]="username" pInputText> 
                     <label for="float-input">ชื่อผู้ใช้</label>
                 </span>
                 <br>
                 <span class="p-float-label">
                     <input class="form-control" id="float-input" type="password" name="password" [(ngModel)]="password" pInputText> 
                     <label for="float-input">รหัสผ่าน</label>
+                </span>
+                <br>
+                <span style="color:red;">
+                    {{descript}}
                 </span>
                 <br>
                 <button class="form-control btn-primary" type="submit" (click)="login()">เข้าสู่ระบบ</button>

@@ -11,6 +11,7 @@ import {InputTextModule} from 'primeng/inputtext';
 import { RegisterComponent } from './register/register.component';
 import {Routes,RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes :Routes = [
   {path:'' ,component:LoginComponent},
@@ -35,6 +36,7 @@ const appRoutes :Routes = [
     InputTextModule,
     RouterModule.forRoot(appRoutes),
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
