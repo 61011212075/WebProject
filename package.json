@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
+    "angular-webstorage-service": "^1.0.2",
     "bootstrap": "^4.5.3",
     "primeicons": "^4.1.0",
     "primeng": "^11.0.0",

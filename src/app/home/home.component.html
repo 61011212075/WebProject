@@ -7,8 +7,8 @@
     }
     .avatar {
     vertical-align: middle;
-    width: 30px;
-    height: 30px;
+    width: 35pt;
+    height: 35pt;
     border-radius: 50%;
     }
     .profile-userpic img {
@@ -31,14 +31,14 @@
                         <div class="row justify-content-md-center">
                             <div class="col-md-auto">
                                 <div class="profile-userpic">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaHpln8mQK6f_Ov26yf0CFycenoQxJWG5mXA&usqp=CAU" style="width: 100px;"  srcset="">
+                                    <img src="{{this.service.u_img}}" style="width: 100px;"  srcset="">
                                 </div>                                
                             </div>
                         </div>
                         <br>
                         <div class="row justify-content-md-center">
                             <div class="col-md-auto">
-                                <h5>Anusorn Khumpha</h5>                              
+                                <h5>{{this.service.u_name}}</h5>                              
                             </div>
                         </div>
                         <div class="row justify-content-md-center">
@@ -49,38 +49,65 @@
                         <hr>
                         <div class="row justify-content-md-center">
                             <div class="col-md-auto">
-                                <h6>Folowing 1201</h6>                             
+                                <h6>กำลังติดตาม 1201</h6>                             
                             </div>
                         </div>
                         <hr>
                         <div class="row justify-content-md-center">
                             <div class="col-md-auto">
-                                <h6>Folowers 51264</h6>                             
+                                <h6>ผู้ติดตาม 51264</h6>                             
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="card bg-white">
-                <div class="card-header bg-white">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaHpln8mQK6f_Ov26yf0CFycenoQxJWG5mXA&usqp=CAU" alt="Avatar" class="avatar">&nbsp;
-                    <label style="font-size: small; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; ">Meme Master</label>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card bg-white">
+                            <div class="card-body">
+                                <div class="row justify-content-md-end">
+                                    <div class="col-sm-2">
+                                        <img src="{{this.service.u_img}}" alt="Avatar" class="avatar">&nbsp;                                        
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn btn-info">แบ่งปัน"Meme"ของคุณสิ........</button>
+                                    </div>
+                                    <div class="col-md-auto">
+                                        <button class="btn btn-primary">โพสต์</button>                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                  <img class="card-img-top" src="https://i.pinimg.com/originals/52/ac/61/52ac61f93f7b27d5a442ed85e0135271.jpg" alt="">
-                  <div class="card-body">
-                    <h5 class="card-title">
-                        <i class="pi pi-heart" style="font-size: 1em"></i>&nbsp;
-                        <i class="pi pi-comment" style="font-size: 1em"></i>&nbsp;
-                        <i class="pi pi-share-alt" style="font-size: 1em"></i>&nbsp;
-                    </h5>
-                    <p class="card-text">Caption</p>
-                  </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card bg-white">
+                            <div class="card-header bg-white">
+                                <img src="{{this.service.u_img}}" alt="Avatar" class="avatar">&nbsp;
+                                <label style="font-size: small; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; ">{{this.service.u_name}}</label>
+                            </div>
+                            <img class="card-img-top" src="https://st4.depositphotos.com/16988120/25540/v/1600/depositphotos_255409044-stock-illustration-isometric-digital-design-programing-software.jpg" alt="">
+                            <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="pi pi-heart" style="font-size: 1em"></i>&nbsp;
+                                <i class="pi pi-comment" style="font-size: 1em"></i>&nbsp;
+                                <i class="pi pi-share-alt" style="font-size: 1em"></i>&nbsp;
+                            </h5>
+                            <p class="card-text">Caption</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="card bg-white">
-                    
+                    <div class="card-body">
+                        <h5>แนะนำ</h5>
+                        <hr>
+                    </div>
                 </div>
             </div>
         </div>

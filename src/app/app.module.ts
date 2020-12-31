@@ -12,6 +12,8 @@ import { RegisterComponent } from './register/register.component';
 import {Routes,RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { StorageServiceModule} from 'angular-webstorage-service';
+import {ButtonModule} from 'primeng/button';
 
 const appRoutes :Routes = [
   {path:'' ,component:LoginComponent},
@@ -30,13 +32,15 @@ const appRoutes :Routes = [
   ],
   imports: [
     BrowserModule,
+    ButtonModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ToolbarModule,
     InputTextModule,
     RouterModule.forRoot(appRoutes),
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    StorageServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
