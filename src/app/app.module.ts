@@ -12,7 +12,6 @@ import { RegisterComponent } from './register/register.component';
 import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { StorageServiceModule} from 'angular-webstorage-service';
-import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -23,7 +22,6 @@ import { ProfileComponent } from './profile/profile.component';
     LoginComponent,
     HomeComponent,
     RegisterComponent,
-    ProfileComponent,
   ],
   imports: [
     BrowserModule,
