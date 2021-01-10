@@ -9,18 +9,12 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import {InputTextModule} from 'primeng/inputtext';
 import { RegisterComponent } from './register/register.component';
-import {Routes,RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { StorageServiceModule} from 'angular-webstorage-service';
-import {ButtonModule} from 'primeng/button';
+import { ProfileComponent } from './profile/profile.component';
 
-const appRoutes :Routes = [
-  {path:'' ,component:LoginComponent},
-  {path:'register',component:RegisterComponent},
-  {path:'home',component:HomeComponent},
 
-]
 
 @NgModule({
   declarations: [
@@ -28,19 +22,18 @@ const appRoutes :Routes = [
     HeaderComponent,
     LoginComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
-    ButtonModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ToolbarModule,
     InputTextModule,
-    RouterModule.forRoot(appRoutes),
     FormsModule,
     HttpClientModule,
-    StorageServiceModule
+    StorageServiceModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
